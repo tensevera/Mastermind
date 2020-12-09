@@ -1,0 +1,48 @@
+C:\Users\uživatel\Desktop\Logik\Logik\bin\Debug\Logik.exe.config
+C:\Users\uživatel\Desktop\Logik\Logik\bin\Debug\Logik.exe
+C:\Users\uživatel\Desktop\Logik\Logik\bin\Debug\Logik.pdb
+C:\Users\uživatel\Desktop\Logik\Logik\obj\Debug\Logik.csprojResolveAssemblyReference.cache
+C:\Users\uživatel\Desktop\Logik\Logik\obj\Debug\Logik.Form1.resources
+C:\Users\uživatel\Desktop\Logik\Logik\obj\Debug\Logik.Properties.Resources.resources
+C:\Users\uživatel\Desktop\Logik\Logik\obj\Debug\Logik.csproj.GenerateResource.Cache
+C:\Users\uživatel\Desktop\Logik\Logik\obj\Debug\Logik.exe
+C:\Users\uživatel\Desktop\Logik\Logik\obj\Debug\Logik.pdb
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\bin\Debug\Logik.exe.config
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\bin\Debug\Logik.exe
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\bin\Debug\Logik.pdb
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.csprojAssemblyReference.cache
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.Form1.resources
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.Properties.Resources.resources
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.csproj.GenerateResource.cache
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.csproj.CoreCompileInputs.cache
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.exe
+C:\Users\Jan Severa\Desktop\Drag&Drop\Logik\obj\Debug\Logik.pdb
+I:\Prg\8A\Drag&Drop\Logik\bin\Debug\Logik.exe.config
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.exe
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.pdb
+I:\Prg\8A\Drag&Drop\Logik\bin\Debug\Logik.exe
+I:\Prg\8A\Drag&Drop\Logik\bin\Debug\Logik.pdb
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.Form1.resources
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.Properties.Resources.resources
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.csproj.GenerateResource.Cache
+D:\PRG\8.A\Drag&Drop\Logik\bin\Debug\Logik.exe.config
+D:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.exe
+D:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.pdb
+D:\PRG\8.A\Drag&Drop\Logik\bin\Debug\Logik.exe
+D:\PRG\8.A\Drag&Drop\Logik\bin\Debug\Logik.pdb
+D:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.csprojResolveAssemblyReference.cache
+D:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.Form1.resources
+D:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.Properties.Resources.resources
+D:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.csproj.GenerateResource.Cache
+E:\PRG\8.A\Drag&Drop\Logik\bin\Debug\Logik.exe.config
+E:\PRG\8.A\Drag&Drop\Logik\bin\Debug\Logik.exe
+E:\PRG\8.A\Drag&Drop\Logik\bin\Debug\Logik.pdb
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.csprojAssemblyReference.cache
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.Form1.resources
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.Properties.Resources.resources
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.csproj.GenerateResource.cache
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.csproj.CoreCompileInputs.cache
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.exe
+E:\PRG\8.A\Drag&Drop\Logik\obj\Debug\Logik.pdb
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.csprojAssemblyReference.cache
+I:\Prg\8A\Drag&Drop\Logik\obj\Debug\Logik.csproj.CoreCompileInputs.cache
