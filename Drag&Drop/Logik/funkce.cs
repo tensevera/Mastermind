@@ -11,7 +11,7 @@ namespace Logik
     {
         public static void hodnot(int[] input, int[] tip, out int cerne, out int bile)
         {
-            int[] barvy = new int[5]; //vytvořím si pole pro kontrolu bílích
+            int[] barvy = new int[6]; //vytvořím si pole pro kontrolu bílích
             cerne = 0;
             bile = 0;
             for (int i = 0; i < 5; i++) //začnu procházet pole
@@ -47,11 +47,10 @@ namespace Logik
                 return 3;
             else if (vstup == Color.Gold)
                 return 4;
-            else if (vstup == Color.Purple)
+            else 
                 return 5;
-            return 0;
         }
-        public static Color kresli(int vstup)
+        public static Color kresli(int vstup) //funkce pro vykreslování na grid
         {
             if (vstup == 0)
                 return Color.Red;

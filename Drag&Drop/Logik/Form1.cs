@@ -60,7 +60,7 @@ namespace Logik
         private void lb_Guess2_DragDrop(object sender, DragEventArgs e)
         {
             (sender as Label).BackColor = (Color)e.Data.GetData(typeof(Color));
-            input[1] = funkce.barva(lb_Guess1.BackColor);
+            input[1] = funkce.barva(lb_Guess2.BackColor);
         }
 
         private void lb_Guess2_DragEnter(object sender, DragEventArgs e)
@@ -72,7 +72,7 @@ namespace Logik
         private void lb_Guess3_DragDrop(object sender, DragEventArgs e)
         {
             (sender as Label).BackColor = (Color)e.Data.GetData(typeof(Color));
-            input[2] = funkce.barva(lb_Guess1.BackColor);
+            input[2] = funkce.barva(lb_Guess3.BackColor);
         }
 
         private void lb_Guess3_DragEnter(object sender, DragEventArgs e)
@@ -84,7 +84,7 @@ namespace Logik
         private void lb_Guess4_DragDrop(object sender, DragEventArgs e)
         {
             (sender as Label).BackColor = (Color)e.Data.GetData(typeof(Color));
-            input[3] = funkce.barva(lb_Guess1.BackColor);
+            input[3] = funkce.barva(lb_Guess4.BackColor);
         }
 
         private void lb_Guess4_DragEnter(object sender, DragEventArgs e)
@@ -96,7 +96,7 @@ namespace Logik
         private void lb_Guess5_DragDrop(object sender, DragEventArgs e)
         {
             (sender as Label).BackColor = (Color)e.Data.GetData(typeof(Color));
-            input[4] = funkce.barva(lb_Guess1.BackColor);
+            input[4] = funkce.barva(lb_Guess5.BackColor);
         }
 
         private void lb_Guess5_DragEnter(object sender, DragEventArgs e)
@@ -128,6 +128,7 @@ namespace Logik
         int aktualnirow = 0; //pozice aktuálního řádku kam vypisuji
         private void bt_Start_Click(object sender, EventArgs e)
         {
+            bt_Start.Visible = false;
             lb_Presne.Visible = true;
             lb_Objevuje.Visible = true;
             nud_Objevuje.Visible = true;
@@ -136,15 +137,15 @@ namespace Logik
             bt_Budiz.Visible = true;
             bt_Hodnot.Visible = true;
             int i = 0;
-            for (int a = 0; a < 5; a++) //nastavím si všechny možnosti
+            for (int a = 0; a < 6; a++) //nastavím si všechny možnosti
             {
-                for (int b = 0; b < 5; b++)
+                for (int b = 0; b < 6; b++)
                 {
-                    for (int c = 0; c < 5; c++)
+                    for (int c = 0; c < 6; c++)
                     {
-                        for (int d = 0; d < 5; d++)
+                        for (int d = 0; d < 6; d++)
                         {
-                            for (int f = 0; f < 5; f++)
+                            for (int f = 0; f < 6; f++)
                             {
                                 moznosti[0, i] = a;
                                 moznosti[1, i] = b;
@@ -158,7 +159,7 @@ namespace Logik
                 }
             }
             Random rnd = new Random();
-            int random = rnd.Next(7775);
+            int random = rnd.Next(7776);
             for (int x = 0; x < 5; x++)
             {
                 guess[x] = moznosti[x, random];
@@ -178,7 +179,7 @@ namespace Logik
             }
             else
             {
-
+                
             }
         }
 
@@ -189,6 +190,11 @@ namespace Logik
             funkce.hodnot(input, guess,out cerne,out  bile);
             nud_Presne.Value = cerne;
             nud_Objevuje.Value = bile;
+        }
+
+        private void dGv_Guess_SelectionChanged(object sender, EventArgs e) 
+        {
+            dGv_Guess.ClearSelection();
         }
     }
 }
