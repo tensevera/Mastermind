@@ -240,7 +240,10 @@
             // 
             // dGv_Guess
             // 
+            this.dGv_Guess.AllowUserToAddRows = false;
             this.dGv_Guess.AllowUserToDeleteRows = false;
+            this.dGv_Guess.AllowUserToResizeColumns = false;
+            this.dGv_Guess.AllowUserToResizeRows = false;
             this.dGv_Guess.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGv_Guess.ColumnHeadersVisible = false;
             this.dGv_Guess.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -249,40 +252,49 @@
             this.Color3,
             this.Color4,
             this.Color5});
+            this.dGv_Guess.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dGv_Guess.Location = new System.Drawing.Point(31, 87);
+            this.dGv_Guess.MultiSelect = false;
             this.dGv_Guess.Name = "dGv_Guess";
+            this.dGv_Guess.ReadOnly = true;
             this.dGv_Guess.RowHeadersVisible = false;
             this.dGv_Guess.Size = new System.Drawing.Size(256, 163);
             this.dGv_Guess.TabIndex = 23;
+            this.dGv_Guess.SelectionChanged += new System.EventHandler(this.dGv_Guess_SelectionChanged);
             // 
             // Color1
             // 
             this.Color1.HeaderText = "";
             this.Color1.Name = "Color1";
+            this.Color1.ReadOnly = true;
             this.Color1.Width = 50;
             // 
             // Color2
             // 
             this.Color2.HeaderText = "";
             this.Color2.Name = "Color2";
+            this.Color2.ReadOnly = true;
             this.Color2.Width = 50;
             // 
             // Color3
             // 
             this.Color3.HeaderText = "";
             this.Color3.Name = "Color3";
+            this.Color3.ReadOnly = true;
             this.Color3.Width = 50;
             // 
             // Color4
             // 
             this.Color4.HeaderText = "";
             this.Color4.Name = "Color4";
+            this.Color4.ReadOnly = true;
             this.Color4.Width = 50;
             // 
             // Color5
             // 
             this.Color5.HeaderText = "";
             this.Color5.Name = "Color5";
+            this.Color5.ReadOnly = true;
             this.Color5.Width = 50;
             // 
             // Form1
