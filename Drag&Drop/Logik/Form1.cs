@@ -22,8 +22,6 @@ namespace Logik
             nud_Presne.Visible = false;
             bt_Budiz.Visible = false;
             bt_Hodnot.Visible = false;
-            dGv_Guess.ColumnCount = 5; //nastavím si velikost gridu
-            dGv_Guess.RowCount = 10;
             foreach (DataGridViewColumn column in dGv_Guess.Columns)
             {
                 column.Width = 47;
@@ -128,6 +126,9 @@ namespace Logik
         int aktualnirow = 0; //pozice aktuálního řádku kam vypisuji
         private void bt_Start_Click(object sender, EventArgs e)
         {
+            aktualnirow = 0;
+            dGv_Guess.ColumnCount = 5; //nastavím si velikost gridu
+            dGv_Guess.RowCount = 10;
             bt_Start.Visible = false;
             lb_Presne.Visible = true;
             lb_Objevuje.Visible = true;
@@ -169,24 +170,64 @@ namespace Logik
                 dGv_Guess.Rows[aktualnirow].Cells[j].Style.BackColor = funkce.kresli(guess[j]);
             }
         }
-
+        int konec = 7776; //maximum pro správné
+        int posun = 0;
         private void bt_Budiz_Click(object sender, EventArgs e)
         {
             aktualnirow++;
             if (nud_Presne.Value == 5)
             {
                 MessageBox.Show("Vyhrál jsem");
+                dGv_Guess.Rows.Clear();
+                bt_Start.Visible = true;
             }
             else
             {
-                
+                if (posun > -1) //pokud si nedělá hráč srandu
+                {
+                    for (int i = 0; i < konec; i++) //projdu vhodné možnosti
+                    {
+                        int[] aktualni = new int[5];
+                        for (int x = 0; x < 5; x++) //načtu si aktulní možnost
+                        {
+                            aktualni[x] = moznosti[x, i];
+                        }
+                        bile = (int)nud_Objevuje.Value;
+                        cerne = (int)nud_Presne.Value;
+                        if (funkce.sedi(bile, cerne, aktualni, guess) == true) //srovnám s výsledkem
+                        {
+                            for (int j = 0; j < 5; j++) //prohodím hodnoty správného pole a posledního špatného
+                            {
+                                int mezivysledek;
+                                mezivysledek = moznosti[j, posun];
+                                moznosti[j, posun] = moznosti[j, i];
+                                moznosti[j, i] = mezivysledek;
+                            }
+                            posun++;
+                        }
+                    }
+                    konec = posun - 1;
+                    for (int j = 0; j < 5; j++) //nakreslím můj aktuální guess
+                    {
+                        Random rnd = new Random();
+                        int random = rnd.Next(konec);
+                        guess[j] = moznosti[j, konec];
+                        dGv_Guess.Rows[aktualnirow].Cells[j].Style.BackColor = funkce.kresli(guess[j]);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nepodváděj!");
+                    dGv_Guess.Rows.Clear();
+                    bt_Start.Visible = true;
+                }
             }
         }
+        int cerne = 0;
+        int bile = 0;
 
         private void bt_Hodnot_Click(object sender, EventArgs e)
         {
-            int cerne = 0;
-            int bile = 0;
             funkce.hodnot(input, guess,out cerne,out  bile);
             nud_Presne.Value = cerne;
             nud_Objevuje.Value = bile;

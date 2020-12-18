@@ -35,6 +35,17 @@ namespace Logik
                 }
             }
         }
+        public static bool sedi(int bileinput, int cerneinput, int[] aktualni, int[] tip)
+        {
+            int bile = 0;
+            int cerne = 0;
+            hodnot(tip, aktualni, out cerne, out bile);
+            if(cerne == cerneinput && bile == bileinput)
+            {
+                return true;
+            }
+            return false;      
+        }
         public static int barva(Color vstup) //vrátím příslušné hodnoty pro dané barvy
         {
             if (vstup == Color.Red)
